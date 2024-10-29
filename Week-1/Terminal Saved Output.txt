@@ -1,0 +1,477 @@
+Last login: Mon Oct 21 22:26:27 on ttys000
+/Users/jana/.zprofile:3: command not found: ‘eval
+jana@Jana-Destroyer ~ % /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+==> Checking for `sudo` access (which may request your password)...
+Password:
+==> This script will install:
+/opt/homebrew/bin/brew
+/opt/homebrew/share/doc/homebrew
+/opt/homebrew/share/man/man1/brew.1
+/opt/homebrew/share/zsh/site-functions/_brew
+/opt/homebrew/etc/bash_completion.d/brew
+/opt/homebrew
+==> The Xcode Command Line Tools will be installed.
+
+Press RETURN/ENTER to continue or any other key to abort:
+==> /usr/bin/sudo /usr/sbin/chown -R jana:admin /opt/homebrew
+==> Searching online for the Command Line Tools
+==> /usr/bin/sudo /usr/bin/touch /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
+
+==> Installing Command Line Tools for Xcode-16.1
+==> /usr/bin/sudo /usr/sbin/softwareupdate -i Command\ Line\ Tools\ for\ Xcode-16.1
+Software Update Tool
+
+Finding available software
+
+Downloading Command Line Tools for Xcode
+
+Downloaded Command Line Tools for Xcode
+Installing Command Line Tools for Xcode
+Done with Command Line Tools for Xcode
+Done.
+==> /usr/bin/sudo /usr/bin/xcode-select --switch /Library/Developer/CommandLineTools
+==> /usr/bin/sudo /bin/rm -f /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
+==> Downloading and installing Homebrew...
+remote: Enumerating objects: 612, done.
+remote: Counting objects: 100% (382/382), done.
+remote: Compressing objects: 100% (125/125), done.
+remote: Total 612 (delta 311), reused 297 (delta 252), pack-reused 230 (from 1)
+==> Updating Homebrew...
+Installing from the API is now the default behaviour!
+You can save space and time by running:
+  brew untap homebrew/core
+Updated 2 taps (homebrew/core and homebrew/cask).
+==> Installation successful!
+
+==> Homebrew has enabled anonymous aggregate formulae and cask analytics.
+Read the analytics documentation (and how to opt-out) here:
+  https://docs.brew.sh/Analytics
+No analytics data has been sent yet (nor will any be during this install run).
+
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+
+==> Next steps:
+- Run brew help to get started
+- Further documentation:
+    https://docs.brew.sh
+
+jana@Jana-Destroyer ~ % 
+jana@Jana-Destroyer ~ % 
+jana@Jana-Destroyer ~ % brew install git
+==> Downloading https://ghcr.io/v2/homebrew/core/git/manifests/2.47.0
+######################################################################### 100.0%
+==> Fetching dependencies for git: libunistring, gettext and pcre2
+==> Downloading https://ghcr.io/v2/homebrew/core/libunistring/manifests/1.3
+######################################################################### 100.0%
+==> Fetching libunistring
+==> Downloading https://ghcr.io/v2/homebrew/core/libunistring/blobs/sha256:38e44
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/gettext/manifests/0.22.5-1
+######################################################################### 100.0%
+==> Fetching gettext
+==> Downloading https://ghcr.io/v2/homebrew/core/gettext/blobs/sha256:7cf6084ae3
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/pcre2/manifests/10.44
+######################################################################### 100.0%
+==> Fetching pcre2
+==> Downloading https://ghcr.io/v2/homebrew/core/pcre2/blobs/sha256:78fe8885f70c
+######################################################################### 100.0%
+==> Fetching git
+==> Downloading https://ghcr.io/v2/homebrew/core/git/blobs/sha256:d4691f0e34143b
+######################################################################### 100.0%
+==> Installing dependencies for git: libunistring, gettext and pcre2
+==> Installing git dependency: libunistring
+==> Downloading https://ghcr.io/v2/homebrew/core/libunistring/manifests/1.3
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/a570da63bc1839c7e217f203abd54d4d873ebd6b99f6e88994d0e79e2ebe987c--libunistring-1.3.bottle_manifest.json
+==> Pouring libunistring--1.3.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libunistring/1.3: 59 files, 5.4MB
+==> Installing git dependency: gettext
+==> Downloading https://ghcr.io/v2/homebrew/core/gettext/manifests/0.22.5-1
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/6556ea282eab4408e8a5a2be54b73c40117a4c1821978c0d109b8204e4fe8f17--gettext-0.22.5-1.bottle_manifest.json
+==> Pouring gettext--0.22.5.arm64_sonoma.bottle.1.tar.gz
+🍺  /opt/homebrew/Cellar/gettext/0.22.5: 2,044 files, 21.7MB
+==> Installing git dependency: pcre2
+==> Downloading https://ghcr.io/v2/homebrew/core/pcre2/manifests/10.44
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/22ed791461c5bf400adde8c3b432c1230866aa1db3c5cb81e06a6ff21cac96ee--pcre2-10.44.bottle_manifest.json
+==> Pouring pcre2--10.44.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/pcre2/10.44: 237 files, 6.3MB
+==> Installing git
+==> Pouring git--2.47.0.arm64_sonoma.bottle.tar.gz
+==> Caveats
+The Tcl/Tk GUIs (e.g. gitk, git-gui) are now in the `git-gui` formula.
+Subversion interoperability (git-svn) is now in the `git-svn` formula.
+
+zsh completions and functions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+==> Summary
+🍺  /opt/homebrew/Cellar/git/2.47.0: 1,684 files, 54.6MB
+==> Running `brew cleanup git`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+==> Upgrading 6 dependents of upgraded formulae:
+Disable this behaviour by setting HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+glib 2.74.0 -> 2.82.2, gnutls 3.7.8 -> 3.8.4, guile 3.0.8_2 -> 3.0.10, libidn2 2.3.3 -> 2.3.7, libslirp 4.7.0 -> 4.8.0, qemu 7.1.0 -> 9.1.1
+==> Downloading https://ghcr.io/v2/homebrew/core/glib/manifests/2.82.2
+######################################################################### 100.0%
+==> Fetching dependencies for glib: python-packaging, mpdecimal, ca-certificates, openssl@3, readline, sqlite, xz and python@3.13
+==> Downloading https://ghcr.io/v2/homebrew/core/python-packaging/manifests/24.1
+######################################################################### 100.0%
+==> Fetching python-packaging
+==> Downloading https://ghcr.io/v2/homebrew/core/python-packaging/blobs/sha256:5
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/mpdecimal/manifests/4.0.0-1
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/7b63c3b34bee402290af49fac829a6682ab45ea5c9258b6fe03b590a03a4c4a9--mpdecimal-4.0.0-1.bottle_manifest.json
+==> Fetching mpdecimal
+==> Downloading https://ghcr.io/v2/homebrew/core/mpdecimal/blobs/sha256:2965eec8
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/f7a1a899d1404f0c9c837f61028928d0704d1cdd79728461141555850e51091c--mpdecimal--4.0.0.arm64_sonoma.bottle.1.tar.gz
+==> Downloading https://ghcr.io/v2/homebrew/core/ca-certificates/manifests/2024-
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/338dad7c2ff7c822cda7c417944521589856741c0fbd7a7f07b88a18d7fb7e05--ca-certificates-2024-09-24.bottle_manifest.json
+==> Fetching ca-certificates
+==> Downloading https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:21
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/a42908db56776e38039ac5f25968df8df16307650c519973b7d5ed689a293c88--ca-certificates--2024-09-24.all.bottle.tar.gz
+==> Downloading https://ghcr.io/v2/homebrew/core/openssl/3/manifests/3.4.0
+######################################################################### 100.0%
+==> Fetching openssl@3
+==> Downloading https://ghcr.io/v2/homebrew/core/openssl/3/blobs/sha256:706b2f22
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/readline/manifests/8.2.13
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/aa1afa38997a2866d91c81fdda8b36d436cd4ea7a82aed07d13c83c56eb3460e--readline-8.2.13.bottle_manifest.json
+==> Fetching readline
+==> Downloading https://ghcr.io/v2/homebrew/core/readline/blobs/sha256:e46d4ff0c
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/83111ac86e24adf736d55f6be8bf15929cea064dcb47859cedcad53389ef8478--readline--8.2.13.arm64_sonoma.bottle.tar.gz
+==> Downloading https://ghcr.io/v2/homebrew/core/sqlite/manifests/3.47.0
+######################################################################### 100.0%
+==> Fetching sqlite
+==> Downloading https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:3c1e59085e1
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/xz/manifests/5.6.3
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/e68799185cc17334108ba286ba8c3df0587c9fd8375647d85f7157b62a797599--xz-5.6.3.bottle_manifest.json
+==> Fetching xz
+==> Downloading https://ghcr.io/v2/homebrew/core/xz/blobs/sha256:c54997c6e29b576
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/75a9464e0ac8d9a7a2afc74a406562cfd2fe182c42adb4ebec7f6eb8d14e61c6--xz--5.6.3.arm64_sonoma.bottle.tar.gz
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.13/manifests/3.13.0_1
+######################################################################### 100.0%
+==> Fetching python@3.13
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.13/blobs/sha256:59cb6d
+######################################################################### 100.0%
+==> Fetching glib
+==> Downloading https://ghcr.io/v2/homebrew/core/glib/blobs/sha256:2a2a3aee202d2
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/libidn2/manifests/2.3.7
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/gnutls/manifests/3.8.4
+######################################################################### 100.0%
+==> Fetching dependencies for gnutls: gmp, libidn2, nettle, p11-kit, libevent, libnghttp2 and unbound
+==> Downloading https://ghcr.io/v2/homebrew/core/gmp/manifests/6.3.0
+######################################################################### 100.0%
+==> Fetching gmp
+==> Downloading https://ghcr.io/v2/homebrew/core/gmp/blobs/sha256:78e4f40cba6419
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/libidn2/manifests/2.3.7
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/45d1d4d2930c4782bf53e761a1c0166cd8a40f4193ac8c44e86f0b6708e80354--libidn2-2.3.7.bottle_manifest.json
+==> Fetching libidn2
+==> Downloading https://ghcr.io/v2/homebrew/core/libidn2/blobs/sha256:670f6ed376
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/nettle/manifests/3.10
+######################################################################### 100.0%
+==> Fetching nettle
+==> Downloading https://ghcr.io/v2/homebrew/core/nettle/blobs/sha256:79f26a53dfc
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/p11-kit/manifests/0.25.5-1
+######################################################################### 100.0%
+==> Fetching p11-kit
+==> Downloading https://ghcr.io/v2/homebrew/core/p11-kit/blobs/sha256:844c2f2f63
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/libevent/manifests/2.1.12_1
+######################################################################### 100.0%
+==> Fetching libevent
+==> Downloading https://ghcr.io/v2/homebrew/core/libevent/blobs/sha256:38a3eb351
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/libnghttp2/manifests/1.64.0
+######################################################################### 100.0%
+==> Fetching libnghttp2
+==> Downloading https://ghcr.io/v2/homebrew/core/libnghttp2/blobs/sha256:13eddf4
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/unbound/manifests/1.22.0
+######################################################################### 100.0%
+==> Fetching unbound
+==> Downloading https://ghcr.io/v2/homebrew/core/unbound/blobs/sha256:277b3f59fc
+######################################################################### 100.0%
+==> Fetching gnutls
+==> Downloading https://ghcr.io/v2/homebrew/core/gnutls/blobs/sha256:46373a7206c
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/guile/manifests/3.0.10
+######################################################################### 100.0%
+==> Fetching dependencies for guile: bdw-gc
+==> Downloading https://ghcr.io/v2/homebrew/core/bdw-gc/manifests/8.2.8
+######################################################################### 100.0%
+==> Fetching bdw-gc
+==> Downloading https://ghcr.io/v2/homebrew/core/bdw-gc/blobs/sha256:26862c04a22
+######################################################################### 100.0%
+==> Fetching guile
+==> Downloading https://ghcr.io/v2/homebrew/core/guile/blobs/sha256:e7f65709dffa
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/libslirp/manifests/4.8.0
+######################################################################### 100.0%
+==> Fetching libslirp
+==> Downloading https://ghcr.io/v2/homebrew/core/libslirp/blobs/sha256:6c4d57761
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/qemu/manifests/9.1.1
+######################################################################### 100.0%
+==> Fetching dependencies for qemu: capstone, dtc, jpeg-turbo, libpng, libssh, libusb, ncurses, pixman, snappy, vde, lz4 and zstd
+==> Downloading https://ghcr.io/v2/homebrew/core/capstone/manifests/5.0.3
+######################################################################### 100.0%
+==> Fetching capstone
+==> Downloading https://ghcr.io/v2/homebrew/core/capstone/blobs/sha256:2c1c08af4
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/dtc/manifests/1.7.1
+######################################################################### 100.0%
+==> Fetching dtc
+==> Downloading https://ghcr.io/v2/homebrew/core/dtc/blobs/sha256:eb7120f3715925
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/jpeg-turbo/manifests/3.0.4
+######################################################################### 100.0%
+==> Fetching jpeg-turbo
+==> Downloading https://ghcr.io/v2/homebrew/core/jpeg-turbo/blobs/sha256:e936777
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/libpng/manifests/1.6.44
+######################################################################### 100.0%
+==> Fetching libpng
+==> Downloading https://ghcr.io/v2/homebrew/core/libpng/blobs/sha256:04c7ef0bb97
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/libssh/manifests/0.11.1
+######################################################################### 100.0%
+==> Fetching libssh
+==> Downloading https://ghcr.io/v2/homebrew/core/libssh/blobs/sha256:0a6184ee3bc
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/libusb/manifests/1.0.27
+######################################################################### 100.0%
+==> Fetching libusb
+==> Downloading https://ghcr.io/v2/homebrew/core/libusb/blobs/sha256:fff3e663284
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/ncurses/manifests/6.5
+######################################################################### 100.0%
+==> Fetching ncurses
+==> Downloading https://ghcr.io/v2/homebrew/core/ncurses/blobs/sha256:ee5253473b
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/pixman/manifests/0.42.2-1
+######################################################################### 100.0%
+==> Fetching pixman
+==> Downloading https://ghcr.io/v2/homebrew/core/pixman/blobs/sha256:d355a294d3f
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/snappy/manifests/1.2.1
+######################################################################### 100.0%
+==> Fetching snappy
+==> Downloading https://ghcr.io/v2/homebrew/core/snappy/blobs/sha256:2b905dfed7d
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/vde/manifests/2.3.3
+######################################################################### 100.0%
+==> Fetching vde
+==> Downloading https://ghcr.io/v2/homebrew/core/vde/blobs/sha256:3d2231810ad722
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/lz4/manifests/1.10.0-1
+######################################################################### 100.0%
+==> Fetching lz4
+==> Downloading https://ghcr.io/v2/homebrew/core/lz4/blobs/sha256:6590245dc4a919
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/zstd/manifests/1.5.6
+######################################################################### 100.0%
+==> Fetching zstd
+==> Downloading https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:2028141683f55
+######################################################################### 100.0%
+==> Fetching qemu
+==> Downloading https://ghcr.io/v2/homebrew/core/qemu/blobs/sha256:0f3764292c3cf
+######################################################################### 100.0%
+==> Upgrading glib
+  2.74.0 -> 2.82.2 
+==> Installing dependencies for glib: python-packaging, mpdecimal, ca-certificates, openssl@3, readline, sqlite, xz and python@3.13
+==> Installing glib dependency: python-packaging
+==> Downloading https://ghcr.io/v2/homebrew/core/python-packaging/manifests/24.1
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/0a8b3181cb4fa8bee143a75cd85f08eb834903bde31ef0a291f3fe9f82bdbe41--python-packaging-24.1_1.bottle_manifest.json
+==> Pouring python-packaging--24.1_1.all.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/python-packaging/24.1_1: 74 files, 545.5KB
+==> Installing glib dependency: mpdecimal
+==> Downloading https://ghcr.io/v2/homebrew/core/mpdecimal/manifests/4.0.0-1
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/7b63c3b34bee402290af49fac829a6682ab45ea5c9258b6fe03b590a03a4c4a9--mpdecimal-4.0.0-1.bottle_manifest.json
+==> Pouring mpdecimal--4.0.0.arm64_sonoma.bottle.1.tar.gz
+🍺  /opt/homebrew/Cellar/mpdecimal/4.0.0: 22 files, 641.2KB
+==> Installing glib dependency: ca-certificates
+==> Downloading https://ghcr.io/v2/homebrew/core/ca-certificates/manifests/2024-
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/338dad7c2ff7c822cda7c417944521589856741c0fbd7a7f07b88a18d7fb7e05--ca-certificates-2024-09-24.bottle_manifest.json
+==> Pouring ca-certificates--2024-09-24.all.bottle.tar.gz
+==> Regenerating CA certificate bundle from keychain, this may take a while...
+🍺  /opt/homebrew/Cellar/ca-certificates/2024-09-24: 4 files, 237.4KB
+==> Installing glib dependency: openssl@3
+==> Downloading https://ghcr.io/v2/homebrew/core/openssl/3/manifests/3.4.0
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/a8a169d38329b14f967d497d0ea77eee6dc5444175093fc7b26026b357e81736--openssl@3-3.4.0.bottle_manifest.json
+==> Pouring openssl@3--3.4.0.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/openssl@3/3.4.0: 7,236 files, 33.4MB
+==> Installing glib dependency: readline
+==> Downloading https://ghcr.io/v2/homebrew/core/readline/manifests/8.2.13
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/aa1afa38997a2866d91c81fdda8b36d436cd4ea7a82aed07d13c83c56eb3460e--readline-8.2.13.bottle_manifest.json
+==> Pouring readline--8.2.13.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/readline/8.2.13: 51 files, 1.7MB
+==> Installing glib dependency: sqlite
+==> Downloading https://ghcr.io/v2/homebrew/core/sqlite/manifests/3.47.0
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/2acd26e317f3463995d9c8df6d1f6660834a2adccf6448e6166f34a89d607683--sqlite-3.47.0.bottle_manifest.json
+==> Pouring sqlite--3.47.0.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/sqlite/3.47.0: 12 files, 4.9MB
+==> Installing glib dependency: xz
+==> Downloading https://ghcr.io/v2/homebrew/core/xz/manifests/5.6.3
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/e68799185cc17334108ba286ba8c3df0587c9fd8375647d85f7157b62a797599--xz-5.6.3.bottle_manifest.json
+==> Pouring xz--5.6.3.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/xz/5.6.3: 96 files, 2.0MB
+==> Installing glib dependency: python@3.13
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.13/manifests/3.13.0_1
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/9b17bb2e9c677d8c64b5adc51ee37d3de0d768a86fc8a8526255a2bf36aeb114--python@3.13-3.13.0_1.bottle_manifest.json
+==> Pouring python@3.13--3.13.0_1.arm64_sonoma.bottle.tar.gz
+==> /opt/homebrew/Cellar/python@3.13/3.13.0_1/bin/python3.13 -Im ensurepip
+==> /opt/homebrew/Cellar/python@3.13/3.13.0_1/bin/python3.13 -Im pip install -v 
+🍺  /opt/homebrew/Cellar/python@3.13/3.13.0_1: 3,255 files, 65MB
+==> Installing glib
+==> Pouring glib--2.82.2.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/glib/2.82.2: 504 files, 36.3MB
+==> Running `brew cleanup glib`...
+Removing: /opt/homebrew/Cellar/glib/2.74.0... (448 files, 21.8MB)
+==> Upgrading gnutls
+  3.7.8 -> 3.8.4 
+==> Installing dependencies for gnutls: gmp, libidn2, nettle, p11-kit, libevent, libnghttp2 and unbound
+==> Installing gnutls dependency: gmp
+==> Downloading https://ghcr.io/v2/homebrew/core/gmp/manifests/6.3.0
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/70a72a71216843d66a953c06ff6337445ce9bc94fae9f0e301e2f59005274a8e--gmp-6.3.0.bottle_manifest.json
+==> Pouring gmp--6.3.0.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/gmp/6.3.0: 22 files, 3.3MB
+==> Installing gnutls dependency: libidn2
+==> Downloading https://ghcr.io/v2/homebrew/core/libidn2/manifests/2.3.7
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/45d1d4d2930c4782bf53e761a1c0166cd8a40f4193ac8c44e86f0b6708e80354--libidn2-2.3.7.bottle_manifest.json
+==> Pouring libidn2--2.3.7.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libidn2/2.3.7: 81 files, 1MB
+==> Installing gnutls dependency: nettle
+==> Downloading https://ghcr.io/v2/homebrew/core/nettle/manifests/3.10
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/8dc57e1a111535116cedad68fea09cf7a5477e6a1e357cdbb65b679768548586--nettle-3.10.bottle_manifest.json
+==> Pouring nettle--3.10.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/nettle/3.10: 96 files, 2.7MB
+==> Installing gnutls dependency: p11-kit
+==> Downloading https://ghcr.io/v2/homebrew/core/p11-kit/manifests/0.25.5-1
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/ba19311d6335b76681ee8e745af9980f80ad52d243a53066a21ead0d6d421a31--p11-kit-0.25.5-1.bottle_manifest.json
+==> Pouring p11-kit--0.25.5.arm64_sonoma.bottle.1.tar.gz
+🍺  /opt/homebrew/Cellar/p11-kit/0.25.5: 31 files, 4.2MB
+==> Installing gnutls dependency: libevent
+==> Downloading https://ghcr.io/v2/homebrew/core/libevent/manifests/2.1.12_1
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/68b113f9ab63db45f4e1860de522ce2ca4fa081eb3c0d5c7d6005a35c3cf8d06--libevent-2.1.12_1.bottle_manifest.json
+==> Pouring libevent--2.1.12_1.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libevent/2.1.12_1: 58 files, 2.2MB
+==> Installing gnutls dependency: libnghttp2
+==> Downloading https://ghcr.io/v2/homebrew/core/libnghttp2/manifests/1.64.0
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/ca092fa9d99f26d52103722d42230c00f21eb8a4a36bf1d40fc9d5f798562d92--libnghttp2-1.64.0.bottle_manifest.json
+==> Pouring libnghttp2--1.64.0.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libnghttp2/1.64.0: 14 files, 794.3KB
+==> Installing gnutls dependency: unbound
+==> Downloading https://ghcr.io/v2/homebrew/core/unbound/manifests/1.22.0
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/94cb5ac77fe9ed3d8e9754f9abb482ea9c14403d0c80616f4f280ed4d7b69496--unbound-1.22.0.bottle_manifest.json
+==> Pouring unbound--1.22.0.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/unbound/1.22.0: 59 files, 6MB
+==> Installing gnutls
+==> Pouring gnutls--3.8.4.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/gnutls/3.8.4: 1,293 files, 10.8MB
+==> Running `brew cleanup gnutls`...
+Removing: /opt/homebrew/Cellar/gnutls/3.7.8... (1,288 files, 11.1MB)
+==> Upgrading guile
+  3.0.8_2 -> 3.0.10 
+==> Installing dependencies for guile: bdw-gc
+==> Installing guile dependency: bdw-gc
+==> Downloading https://ghcr.io/v2/homebrew/core/bdw-gc/manifests/8.2.8
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/89bb7c10cfa3482949e74e3e7687110dada74da8f2f584bd385aa97c1cb30c96--bdw-gc-8.2.8.bottle_manifest.json
+==> Pouring bdw-gc--8.2.8.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/bdw-gc/8.2.8: 82 files, 1.8MB
+==> Installing guile
+==> Pouring guile--3.0.10.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/guile/3.0.10: 862 files, 61.3MB
+==> Running `brew cleanup guile`...
+Removing: /opt/homebrew/Cellar/guile/3.0.8_2... (846 files, 62.4MB)
+==> Upgrading libslirp
+  4.7.0 -> 4.8.0 
+==> Pouring libslirp--4.8.0.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libslirp/4.8.0: 12 files, 412.5KB
+==> Running `brew cleanup libslirp`...
+Removing: /opt/homebrew/Cellar/libslirp/4.7.0... (11 files, 385.0KB)
+==> Upgrading qemu
+  7.1.0 -> 9.1.1 
+==> Installing dependencies for qemu: capstone, dtc, jpeg-turbo, libpng, libssh, libusb, ncurses, pixman, snappy, vde, lz4 and zstd
+==> Installing qemu dependency: capstone
+==> Downloading https://ghcr.io/v2/homebrew/core/capstone/manifests/5.0.3
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/f77d59d4c25d40ffcd60c420fbcd75fc7821fdaec8c04b54dca354ecb3dd9384--capstone-5.0.3.bottle_manifest.json
+==> Pouring capstone--5.0.3.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/capstone/5.0.3: 31 files, 22.4MB
+==> Installing qemu dependency: dtc
+==> Downloading https://ghcr.io/v2/homebrew/core/dtc/manifests/1.7.1
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/9af2d1bdcb1bf2aa3d63869290ab4a3627ffd6cbabca2be328f51ec71bdd0150--dtc-1.7.1.bottle_manifest.json
+==> Pouring dtc--1.7.1.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/dtc/1.7.1: 19 files, 626.4KB
+==> Installing qemu dependency: jpeg-turbo
+==> Downloading https://ghcr.io/v2/homebrew/core/jpeg-turbo/manifests/3.0.4
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/2a3630ffd65db74be2c3c6104929548e1a0e8f2c82583e0732016f49b52b2c13--jpeg-turbo-3.0.4.bottle_manifest.json
+==> Pouring jpeg-turbo--3.0.4.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/jpeg-turbo/3.0.4: 45 files, 3.4MB
+==> Installing qemu dependency: libpng
+==> Downloading https://ghcr.io/v2/homebrew/core/libpng/manifests/1.6.44
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/0e089cec124a817e140dfc78aba6887ae650dd4fefe1d55d5b516a872f8007b5--libpng-1.6.44.bottle_manifest.json
+==> Pouring libpng--1.6.44.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libpng/1.6.44: 28 files, 1.3MB
+==> Installing qemu dependency: libssh
+==> Downloading https://ghcr.io/v2/homebrew/core/libssh/manifests/0.11.1
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/3591f41514c0ebe698a36753dce13e71fa33363993429a04af0da249f1eea04c--libssh-0.11.1.bottle_manifest.json
+==> Pouring libssh--0.11.1.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libssh/0.11.1: 25 files, 1.4MB
+==> Installing qemu dependency: libusb
+==> Downloading https://ghcr.io/v2/homebrew/core/libusb/manifests/1.0.27
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/55f37930c4e678b6d2cd789c12b59fc9ec1784ecd5c034e3ea54721c7f32272b--libusb-1.0.27.bottle_manifest.json
+==> Pouring libusb--1.0.27.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libusb/1.0.27: 23 files, 620.6KB
+==> Installing qemu dependency: ncurses
+==> Downloading https://ghcr.io/v2/homebrew/core/ncurses/manifests/6.5
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/b2f8ce4e08b15832435170efd265346225ee388d5baab3d5c50e3a77c5673b5a--ncurses-6.5.bottle_manifest.json
+==> Pouring ncurses--6.5.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/ncurses/6.5: 4,052 files, 9.9MB
+==> Installing qemu dependency: pixman
+==> Downloading https://ghcr.io/v2/homebrew/core/pixman/manifests/0.42.2-1
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/2b0d8f2c63712ce503fa54309b732051a7ca5cd31bd561aa4aaba331bf26bcef--pixman-0.42.2-1.bottle_manifest.json
+==> Pouring pixman--0.42.2.arm64_sonoma.bottle.1.tar.gz
+🍺  /opt/homebrew/Cellar/pixman/0.42.2: 12 files, 1.3MB
+==> Installing qemu dependency: snappy
+==> Downloading https://ghcr.io/v2/homebrew/core/snappy/manifests/1.2.1
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/b2e6bfcdbddf1d451a8dbbb6fc3c44a267b753ac1a889dbb0b9159bf31dacdd5--snappy-1.2.1.bottle_manifest.json
+==> Pouring snappy--1.2.1.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/snappy/1.2.1: 19 files, 172.2KB
+==> Installing qemu dependency: vde
+==> Downloading https://ghcr.io/v2/homebrew/core/vde/manifests/2.3.3
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/4e9503141162571c2cd21e89a9e61f524a7403ffe5ffe269f4a39ce5aef9f210--vde-2.3.3.bottle_manifest.json
+==> Pouring vde--2.3.3.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/vde/2.3.3: 67 files, 1.3MB
+==> Installing qemu dependency: lz4
+==> Downloading https://ghcr.io/v2/homebrew/core/lz4/manifests/1.10.0-1
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/8e11e90eb21a06e0f199af9d80e011e3693c77dd353b2477579d95c8471a5802--lz4-1.10.0-1.bottle_manifest.json
+==> Pouring lz4--1.10.0.arm64_sonoma.bottle.1.tar.gz
+🍺  /opt/homebrew/Cellar/lz4/1.10.0: 24 files, 714.2KB
+==> Installing qemu dependency: zstd
+==> Downloading https://ghcr.io/v2/homebrew/core/zstd/manifests/1.5.6
+Already downloaded: /Users/jana/Library/Caches/Homebrew/downloads/29403e0df5404d8aeca0e750ac135ec9ef44fc5eeb6df69170ed602acabf0ffb--zstd-1.5.6.bottle_manifest.json
+==> Pouring zstd--1.5.6.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/zstd/1.5.6: 32 files, 2.2MB
+==> Installing qemu
+==> Pouring qemu--9.1.1.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/qemu/9.1.1: 165 files, 644.9MB
+==> Running `brew cleanup qemu`...
+Removing: /opt/homebrew/Cellar/qemu/7.1.0... (163 files, 501.8MB)
+==> Checking for dependents of upgraded formulae...
+==> No broken dependents found!
+==> Caveats
+==> git
+The Tcl/Tk GUIs (e.g. gitk, git-gui) are now in the `git-gui` formula.
+Subversion interoperability (git-svn) is now in the `git-svn` formula.
+
+zsh completions and functions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+jana@Jana-Destroyer ~ % 
